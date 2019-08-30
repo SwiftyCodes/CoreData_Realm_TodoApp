@@ -9,12 +9,23 @@
 import UIKit
 
 class TodoListVC: UIViewController {
+    
+    @IBOutlet weak var todoeyTableView: UITableView!
 
-    var toDoListArray = ["Buy Fruits","Buy Vegitables","Buy Cake"]
+    var toDoListArray : [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBAction func addButtomPressed(_ sender: UIBarButtonItem) {
+        let alertController = HelperClass.sharedInstance.alertWithTextField(alertTitle: "Add new item to Todoey", alertMessage: "", actionTitle: "Add", onCompletion: { textFieldValue in
+            self.toDoListArray.append(textFieldValue)
+            self.todoeyTableView.reloadData()
+        })
+        present(alertController, animated: true, completion: nil)
+    }
+    
 }
 
 extension TodoListVC : UITableViewDelegate {

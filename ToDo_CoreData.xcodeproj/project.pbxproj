@@ -16,6 +16,7 @@
 		75F9ECC22319620B00ACBB27 /* ToDo_CoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F9ECC12319620B00ACBB27 /* ToDo_CoreDataTests.swift */; };
 		75F9ECCD2319620B00ACBB27 /* ToDo_CoreDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F9ECCC2319620B00ACBB27 /* ToDo_CoreDataUITests.swift */; };
 		75F9ECDD2319640300ACBB27 /* TodoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F9ECDC2319640300ACBB27 /* TodoTableViewCell.swift */; };
+		75F9ECDF231968D800ACBB27 /* HelperClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F9ECDE231968D800ACBB27 /* HelperClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		75F9ECCC2319620B00ACBB27 /* ToDo_CoreDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo_CoreDataUITests.swift; sourceTree = "<group>"; };
 		75F9ECCE2319620B00ACBB27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75F9ECDC2319640300ACBB27 /* TodoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewCell.swift; sourceTree = "<group>"; };
+		75F9ECDE231968D800ACBB27 /* HelperClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				75F9ECA92319620500ACBB27 /* AppDelegate.swift */,
+				75F9ECDE231968D800ACBB27 /* HelperClass.swift */,
 				75F9ECDB231963D700ACBB27 /* View */,
 				75F9ECDA231963D100ACBB27 /* Controller */,
 				75F9ECAD2319620500ACBB27 /* Main.storyboard */,
@@ -278,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75F9ECDF231968D800ACBB27 /* HelperClass.swift in Sources */,
 				75F9ECAC2319620500ACBB27 /* TodoListVC.swift in Sources */,
 				75F9ECAA2319620500ACBB27 /* AppDelegate.swift in Sources */,
 				75F9ECB22319620500ACBB27 /* ToDo_CoreData.xcdatamodeld in Sources */,
