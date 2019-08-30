@@ -52,7 +52,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Todoey" id="IoY-rs-USJ">
-                        <barButtonItem key="rightBarButtonItem" title="Add" id="t1l-G4-8EM">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="t1l-G4-8EM">
                             <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="addButtomPressed:" destination="BYZ-38-t0r" id="Dfg-fg-IQ6"/>
@@ -77,6 +77,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.27058823529999998" green="0.5568627451" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="35"/>
                             <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
                     </navigationBar>

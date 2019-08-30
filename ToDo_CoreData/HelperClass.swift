@@ -12,19 +12,19 @@ import UIKit
 class HelperClass {
     
     static var sharedInstance = HelperClass()
+    private init() {}
     
-    func alertWithTextField(alertTitle title: String, alertMessage message : String, actionTitle actiontitle: String, onCompletion: @escaping(String) -> Void) -> UIAlertController{
+    //MARK: Alert TextField
+    func alertWithTextField(alertTitle title: String, alertMessage message : String, actionTitle actiontitle: String, textFieldPlaceholder placeholder:String, onCompletion: @escaping(String) -> Void) -> UIAlertController{
         var addedItem = UITextField()
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: actiontitle, style: .default) { (action) in
-            print("Action clicked")
             onCompletion(addedItem.text!)
         }
-        let cancel = UIAlertAction(title: "Cancel", style: .destructive) { (action) in
-            print("Cancel clicked")
-        }
+        let cancel = UIAlertAction(title: "Cancel", style: .destructive) { (action) in}
+        
         alert.addTextField { (alertTextField) in
-            alertTextField.placeholder = "Create a Todoey"
+            alertTextField.placeholder = placeholder
             addedItem = alertTextField
         }
         
