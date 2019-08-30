@@ -84,24 +84,23 @@ extension TodoListVC : UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true) // for animation
     }
     
-//    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-//        return true
-//    }
-//    
-//    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-//        switch editingStyle {
-//        case .delete:
-//            
-//            if searchBarOutlet.text == ""{
-//                toDoListArray = DatabaseHelper.sharedInstance.delete(atIndex: indexPath.row)
-//            }else{
-//                filteredListArray = DatabaseHelper.sharedInstance.delete(atIndex: indexPath.row)
-//            }
-//            tableView.deleteRows(at: [indexPath], with: .automatic)
-//        default:
-//            break
-//        }
-//    }
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        switch editingStyle {
+        case .delete:
+
+            if searchBarOutlet.text == ""{
+                toDoListArray = DatabaseHelper.sharedInstance.delete(atIndex: indexPath.row)
+            }
+            
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        default:
+            break
+        }
+    }
 }
 
 extension TodoListVC : UISearchBarDelegate {
