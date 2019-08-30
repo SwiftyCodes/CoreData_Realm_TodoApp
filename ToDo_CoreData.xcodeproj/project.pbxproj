@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7565443B2319AD35002F7557 /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7565443A2319AD35002F7557 /* DatabaseHelper.swift */; };
 		75F9ECAA2319620500ACBB27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F9ECA92319620500ACBB27 /* AppDelegate.swift */; };
 		75F9ECAC2319620500ACBB27 /* TodoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F9ECAB2319620500ACBB27 /* TodoListVC.swift */; };
 		75F9ECAF2319620500ACBB27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75F9ECAD2319620500ACBB27 /* Main.storyboard */; };
@@ -17,7 +18,6 @@
 		75F9ECCD2319620B00ACBB27 /* ToDo_CoreDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F9ECCC2319620B00ACBB27 /* ToDo_CoreDataUITests.swift */; };
 		75F9ECDD2319640300ACBB27 /* TodoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F9ECDC2319640300ACBB27 /* TodoTableViewCell.swift */; };
 		75F9ECDF231968D800ACBB27 /* HelperClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F9ECDE231968D800ACBB27 /* HelperClass.swift */; };
-		75F9ECE22319817A00ACBB27 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F9ECE12319817A00ACBB27 /* ItemModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7565443A2319AD35002F7557 /* DatabaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
 		75F9ECA62319620500ACBB27 /* ToDo_CoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo_CoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F9ECA92319620500ACBB27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75F9ECAB2319620500ACBB27 /* TodoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListVC.swift; sourceTree = "<group>"; };
@@ -54,7 +55,6 @@
 		75F9ECCE2319620B00ACBB27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75F9ECDC2319640300ACBB27 /* TodoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewCell.swift; sourceTree = "<group>"; };
 		75F9ECDE231968D800ACBB27 /* HelperClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperClass.swift; sourceTree = "<group>"; };
-		75F9ECE12319817A00ACBB27 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,13 +107,13 @@
 			children = (
 				75F9ECA92319620500ACBB27 /* AppDelegate.swift */,
 				75F9ECDE231968D800ACBB27 /* HelperClass.swift */,
+				7565443A2319AD35002F7557 /* DatabaseHelper.swift */,
 				75F9ECE02319813B00ACBB27 /* Model */,
 				75F9ECDB231963D700ACBB27 /* View */,
 				75F9ECDA231963D100ACBB27 /* Controller */,
 				75F9ECB32319620B00ACBB27 /* Assets.xcassets */,
 				75F9ECB52319620B00ACBB27 /* LaunchScreen.storyboard */,
 				75F9ECB82319620B00ACBB27 /* Info.plist */,
-				75F9ECB02319620500ACBB27 /* ToDo_CoreData.xcdatamodeld */,
 			);
 			path = ToDo_CoreData;
 			sourceTree = "<group>";
@@ -156,7 +156,7 @@
 		75F9ECE02319813B00ACBB27 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				75F9ECE12319817A00ACBB27 /* ItemModel.swift */,
+				75F9ECB02319620500ACBB27 /* ToDo_CoreData.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -292,9 +292,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75F9ECE22319817A00ACBB27 /* ItemModel.swift in Sources */,
 				75F9ECDF231968D800ACBB27 /* HelperClass.swift in Sources */,
 				75F9ECAC2319620500ACBB27 /* TodoListVC.swift in Sources */,
+				7565443B2319AD35002F7557 /* DatabaseHelper.swift in Sources */,
 				75F9ECAA2319620500ACBB27 /* AppDelegate.swift in Sources */,
 				75F9ECB22319620500ACBB27 /* ToDo_CoreData.xcdatamodeld in Sources */,
 				75F9ECDD2319640300ACBB27 /* TodoTableViewCell.swift in Sources */,
